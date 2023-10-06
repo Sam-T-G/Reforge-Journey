@@ -12,4 +12,6 @@ Realizations - Need to reacclimate myself into getting into the flow of day-to-d
 
 I started with creating a repository with this journal entry file, a basic README, and the MIT license.
 
-I think I should create a basic HTML and CSS file to start this project. I must also remember how to organize my respositories, and for that I'm going to revisit some of my earlier projects from my coding bootcamp. It seems like I used to have an assets folder that had CSS, JS, and other necessary subfolders so I'll apply that to my repository and create my boilerplate within.
+I think I should create a basic HTML and CSS file to start this project. I must also remember how to organize my respositories, and for that I'm going to revisit some of my earlier projects from my coding bootcamp. It seems like I used to have an assets folder that had CSS, JS, and other necessary subfolders so I'll apply that to my repository and create my boilerplate within. 
+
+Alongside this boilerplate creation, I'll also use this as an opportunity to practice my branch creation and pull request/review habits. 
