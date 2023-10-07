@@ -19,3 +19,18 @@ Alongside this boilerplate creation, I'll also use this as an opportunity to pra
 I should now look at my previous repos and see how I created boilerplate HTML and CSS files. Unsure If I want to incorporate javascript to this project just yet.
 
 Finished going down a rabbit hole of reading articles and cross referencing my old work. I've re-familiarized the basics of repo structuring and also did a lot of research on industry standards. I've also re-opened the conversation of AI existing in today's software engineering case and have come to a few realizations. AI going forward may be an invaluable tool for efficiency. During my coding break, I've felt very nervous about how competent AI has become, especially in the software engineering world, but now have come to the realization that AI can also be a very useful tool for those that know how to integrate it to increase personal capabilities and efficiency in work. I should look to incorporate using AI more often in re-learning and also utilizing it for efficiency in my day-to-day work going forward. For now, I've added the boilerplate HTML file to the repo and will continue my journey tomorrow.
+
+10/6/23 -11:40 PM
+Tonight will be a short session but I really wanted to get my general idea outlined.
+
+General Concept: Have a space where I can practice and display general concepts and practices. If not directly on this repo, I will include links to extraneous applications.
+
+I'll retrace my steps in my bootcamp curriculum and create goals/segments to practice what I've previously learned. General objectives are as follows: 
+
+HTML
+CSS
+JavaScript
+APIs
+Object Oriented Programming
+
+For now I'll limit to those objectives as they are more front-end focused and ending with a refresher on object oriented programming will be a good segway to back-end application.
