@@ -49,3 +49,12 @@ What I've Accomplished:
 Have refreshed basics of HTML and setup for CSS and javaScript.
 
 What am I working on the next session: CSS styling, and HTML content for project goals/ideas.
+
+10/10/23 - 8:20 PM
+
+Gone for the weekend for a wedding but more inspired for this project than ever! Today's goal will be to see how far I can get with tinkering with my journey page. Some things I can work on are - 
+
+Scope and Organization of project
+Re-learning basic structures and code
+Styling 
+
