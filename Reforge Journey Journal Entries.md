@@ -57,4 +57,6 @@ Gone for the weekend for a wedding but more inspired for this project than ever!
 Scope and Organization of project
 Re-learning basic structures and code
 Styling 
+Mobile Adaptation
 
+![Color Scheme Idea](/Reforge-Journey/assets/images/journal-images/colorscheme.png.png)
