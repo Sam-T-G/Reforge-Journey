@@ -31,8 +31,15 @@ header {
 header h1 {
     display: inline-block;
     margin-right: 30vh;
-    font-size: 40px;
+    font-size: 55px;
     color: var(--off-white);
+}
+
+header h2 {
+    display: inline-block;
+    margin-left: 27vh;
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 header div {
@@ -64,6 +71,15 @@ a {
     &:hover {
         color: #ffffff;
     }
+}
+
+header p {
+    justify-content: center;
+    display: flex;
+    letter-spacing: 0.9px;
+    margin-top: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .navigation {
