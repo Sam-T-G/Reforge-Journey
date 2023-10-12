@@ -13,6 +13,8 @@
 
 body {
     background-color: var(--off-white);
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -64,13 +66,16 @@ a {
 }
 
 .navigation {
+    /* makes nav bar persistent on top of the page regardless of scrolling down throughout the page */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 25x;
+    position: fixed; 
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: right;
+    align-items: left;
     height: 80px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--gray);
