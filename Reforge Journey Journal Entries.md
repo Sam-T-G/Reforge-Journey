@@ -59,4 +59,8 @@ Re-learning basic structures and code
 Styling 
 Mobile Adaptation
 
-![Color Scheme Idea](/Reforge-Journey/assets/images/journal-images/colorscheme.png.png)
+10/12/23 - 4:30 AM
+
+I've been working at a broken pace the past few days, but for the past 6 hours, I've found myself in a very productive flow of revisiting styling through CSS and HTML. While not accomplishing much overall within this project, I've regained knowledge on how to do an astounding number of things I've forgotten since I've last committed time to code. Within the next day or two, I want to continue to brush up on my styling skills, but particularly finish the general aesthetic idea that I'll implement throughout the project and move on to create features with javascript.
+
+From now on, I've also decided to prioritize my creative spurts and report on them afterwards rather than interrupting my flow for the sake of updating all of my steps within this journal.
