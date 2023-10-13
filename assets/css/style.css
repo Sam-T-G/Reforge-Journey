@@ -99,6 +99,22 @@ header p {
     color: #ffffff;
 }
 
+.html {
+    display: flex;
+    height:750px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.html h3 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.css {
+    display: flex;
+    height: 750px;
+}
+
 .footer {
     padding: 30px;
     clear: both;
