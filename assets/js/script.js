@@ -21,7 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function scrollToWithRamping(targetElement, offset) {
-    const start = window.pageYOffset;
+    const start = window.scrollY;
     const targetPosition = targetElement.offsetTop - offset;
     const distance = targetPosition - start;
     // Adjustable, 750 seems to be the desired animation duration in milliseconds

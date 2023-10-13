@@ -64,3 +64,16 @@ Mobile Adaptation
 I've been working at a broken pace the past few days, but for the past 6 hours, I've found myself in a very productive flow of revisiting styling through CSS and HTML. While not accomplishing much overall within this project, I've regained knowledge on how to do an astounding number of things I've forgotten since I've last committed time to code. Within the next day or two, I want to continue to brush up on my styling skills, but particularly finish the general aesthetic idea that I'll implement throughout the project and move on to create features with javascript.
 
 From now on, I've also decided to prioritize my creative spurts and report on them afterwards rather than interrupting my flow for the sake of updating all of my steps within this journal.
+
+10/13/23 - 6:30 AM
+
+Started late, and also got very carried away tonight, but was able to accomplish and learn a lot even though not many apparent changes to the page have been made. I started off the night with just wanting to fill out the HTML and CSS section with a little bit more text content and maybe add just a little bit of styling, but ended up going down an inspirational rabbit hole of learning and making various stylistic adjustments that will be very valuable tools for the future.
+
+After writing a bit more in the HTML and CSS sections, I wanted to fix an issue I ran into in which the floating sticky navigation bar I created would sort of incorrectly link the segments it was assigned to. When the links took me to the below segments, the floating navbar would cover the beginning of the sections because the links would navigate me so that the beginning of the list segments were the first things shown on top of the page as shown below.
+![Navbar Obstructing Navigated Segments of the page](./assets/images/journal-images/nav-obstruction.png)
+Using the mix of research and AI, I utilized JavaScript for the first time in this project in order to create a function that offsets the targeted navigation links so that the navbar does not cut into the desired segments.
+![Proper Navigated Segments](./assets/images/journal-images/proper-nav-spacing.png)
+I then made some minor adjustments and added a conditional statement in order to fix a bug which made the home button in the navigation not function properly due to the addition of the new offset function I applied, and even though I was past my bedtime, I for some reason decided I would teach myself how to add a smooth scrolling effect to create a more modern feel when navigating through the page. 
+
+The following progress sunk a total of four hours on reading/and tweaking functions and segments of functions I've found online and also tweaked using the help of AI. At the end of the night, I was able to not only create a smooth animation when navigating to different parts of the website, but also create a ramping function that created an additional subtle, but impactful effect in which the speed of the automatic scroll ramps up and slows down appropriately to create a even more polished and modern feel. Here is a screenshot of the ramping function I ended up with. 
+![Ramping Effect Function](./assets/images/journal-images/ramping-function.png)
