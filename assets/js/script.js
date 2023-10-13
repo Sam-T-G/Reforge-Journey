@@ -51,7 +51,7 @@ function scrollToWithRamping(targetElement, offset) {
     const start = window.pageYOffset;
     const targetPosition = targetElement.offsetTop - offset;
     const distance = targetPosition - start;
-    const duration = 800; // You can adjust the duration
+    const duration = 750;
     const easingFunction = customEase;
 
     let startTime = null;
