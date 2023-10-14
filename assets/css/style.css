@@ -30,25 +30,25 @@ header {
 
 header h1 {
     display: inline-block;
-    margin-right: 30vh;
-    font-size: 4em;
+    margin-right: 30vw;
+    font-size: 6vw;
     color: var(--off-white);
 }
 
 header h2 {
     display: inline-block;
     margin-left: 27vw;
-    font-size: 1.6em;
-    margin-top: 20px;
+    font-size: 1.6rem;
+    margin-top: 2.5vh;
 }
 
 header div {
     display: inline-block;
-    justify-content: left;
+    justify-content: center;
     margin-right: 20vw;
     margin-left: 20vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     
 }
 
@@ -76,10 +76,11 @@ a {
 header p {
     justify-content: center;
     display: flex;
-    letter-spacing: 0.9px;
-    margin-top: 60px;
-    margin-left: 200px;
-    margin-right: 200px;
+    letter-spacing: 0.03rem;
+    margin-top: 7vh;
+    /* margin-left: 22vw;
+    margin-right: 22vw; */
+    max-width: 56vw;
 }
 
 .navigation {
@@ -103,19 +104,29 @@ header p {
     display: flex;
     background-color: var(--off-white);
     height:800px;
+    justify-content: center;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .html h3 {
+    display: flex;
     font-size: 40px;
     color: var(--dark-blue);
-    margin-left: 50px;
-    margin-top: 350px;
-    width: 650px;
+    margin-left: 12vw;
+    align-items: center;
+    width: 25vw;
 }
 
 .html p {
-    font-size: 24px;
+    display: flex;
+    font-size: 1.6em;
+    width: 35vw;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7vw;
+    margin-right: 12vw;
 }
 
 .css {
@@ -129,3 +140,12 @@ header p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
+/* future implementation of mobile media queries for page responsiveness */
+@media screen and (max-width: 768px) {
+    /* 768px is mobile landscape breakpoint */
+  }
+  @media screen and (max-width: 480px) {
+    /* 480px is mobile portrait breakpoint */
+  }
+  
