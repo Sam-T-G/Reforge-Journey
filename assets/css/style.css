@@ -115,7 +115,15 @@ header p {
 }
 
 .html p {
-    font-size: 24px;
+    display: flex;
+    overflow: hidden;
+    white-space: pre;
+    font-size: 1.6em;
+    width: 35vw;
+    height: 65vh;
+    align-items: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
 .css {
@@ -129,3 +137,12 @@ header p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
+/* future implementation of mobile media queries for page responsiveness */
+@media screen and (max-width: 768px) {
+    /* 768px is mobile landscape breakpoint */
+  }
+  @media screen and (max-width: 480px) {
+    /* 480px is mobile portrait breakpoint */
+  }
+  
