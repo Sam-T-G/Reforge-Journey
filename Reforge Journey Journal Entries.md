@@ -77,3 +77,9 @@ I then made some minor adjustments and added a conditional statement in order to
 
 The following progress sunk a total of four hours on reading/and tweaking functions and segments of functions I've found online and also tweaked using the help of AI. At the end of the night, I was able to not only create a smooth animation when navigating to different parts of the website, but also create a ramping function that created an additional subtle, but impactful effect in which the speed of the automatic scroll ramps up and slows down appropriately to create a even more polished and modern feel. Here is a screenshot of the ramping function I ended up with. 
 ![Ramping Effect Function](./assets/images/journal-images/ramping-function.png)
+
+10/14/23 - 3:13 AM
+
+Today's session was mostly self exploration into styling standards and some subtleties of CSS and industry standards. Most of today's session consisted of small adjustments and working with how the project page scales with window resizing. The text elements now all behave in a consistent way when resizing the screen and stays where I want it to regardless of screen size. I was initially having issues with some text elements floating to areas that were not intended. For example, my text elements under the HTML section was floating up relative to where the section was anchored, my text would warp in odd ways in my Hero header segment, and various other small unintended reactions throughout. I think today's segment was mostly self educational on not only some of the issues I would definitely run into going forward, but also what industry standards and trends are with website design. 
+
+I've realized that going forward, I can use a lot of my artistic background and training to benefit my website design significantly, and am very excited to embark on future self administered projects where I will have more curated content to work with to create a final product.
