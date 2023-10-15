@@ -2,10 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :root {
     --off-white: #F1F6F9;
+    --light-gray: #e4e9ec;
     --gray: #9BA4B5;
     --blue: #394867;
     --dark-blue: #212A3E;
@@ -38,7 +40,7 @@ header h1 {
 header h2 {
     display: inline-block;
     margin-left: 27vw;
-    font-size: 1.6rem;
+    font-size: 2vw;
     margin-top: 2.5vh;
 }
 
@@ -47,7 +49,6 @@ header div {
     justify-content: center;
     margin-right: 20vw;
     margin-left: 20vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
     
 }
@@ -111,7 +112,7 @@ header p {
 
 .html h3 {
     display: flex;
-    font-size: 40px;
+    font-size: 3.2rem;
     color: var(--dark-blue);
     margin-left: 12vw;
     align-items: center;
@@ -131,7 +132,31 @@ header p {
 
 .css {
     display: flex;
-    height: 750px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    height: 800px;
+}
+
+.css p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 35vw;
+    font-size: 1.5rem;
+    margin-left: 12vw;
+    margin-right: 7vw;
+}
+
+.css h4 {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    margin-right: 12vw;
+    font-size: 3.2rem;
 }
 
 .footer {
