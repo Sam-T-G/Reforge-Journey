@@ -11,6 +11,7 @@
     --gray: #9BA4B5;
     --blue: #394867;
     --dark-blue: #212A3E;
+    --black: #0c0c0c;
   }
 
 body {
@@ -163,6 +164,8 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--black);
+    color: var(--off-white);
 }
 
 .javaScript h5 {
