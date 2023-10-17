@@ -196,7 +196,7 @@ header p {
 }
 
 .apis {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background-color: var(--dark-blue);
@@ -209,6 +209,12 @@ header p {
     justify-content: center;
     width: 100vw;
     font-size: 3.5rem;
+}
+
+.apiContainers {
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw;
 }
 
 /* future implementation of mobile media queries for page responsiveness */
