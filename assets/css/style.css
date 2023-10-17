@@ -159,6 +159,21 @@ header p {
     font-size: 3.2rem;
 }
 
+.javaScript {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.javaScript h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    margin-left: 12vw;
+    font-size: 3.5rem;
+}
+
 .footer {
     padding: 30px;
     clear: both;
