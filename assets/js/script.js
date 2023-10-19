@@ -97,11 +97,21 @@ function fetchClockData() {
     fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
-            // Extract the time from the API response
-            const currentTime = data.datetime;
+            // Fetch time from API response
+            const datetime = data.datetime;
 
-            // Display fetched information and displays time in clock-container div
-            document.getElementById("clock-container").textContent = currentTime;
+            const date = new Date(datetime);
+
+            // Fetch the desired time components
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+
+            // String that displays desired time format
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+            // populate the correct div with appropriate information
+            document.getElementById("clock-container").textContent = formattedTime;
         })
         .catch((error) => {
             console.error("Error fetching clock data: " + error);
