@@ -87,3 +87,25 @@ const observer = new IntersectionObserver(entries => {
 //Set the IntersectionObserver to observe the header element
 observer.observe(header);
 typeTextEffect();
+
+
+// API url with call to fetch time based off of user IP location
+const apiUrl = "http://worldtimeapi.org/api/ip";
+
+// fetch and display clock data from API
+function fetchClockData() {
+    fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            // Extract the time from the API response
+            const currentTime = data.datetime;
+
+            // Display fetched information and displays time in clock-container div
+            document.getElementById("clock-container").textContent = currentTime;
+        })
+        .catch((error) => {
+            console.error("Error fetching clock data: " + error);
+        });
+}
+
+fetchClockData();
