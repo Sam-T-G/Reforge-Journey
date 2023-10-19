@@ -108,4 +108,8 @@ function fetchClockData() {
         });
 }
 
-fetchClockData();
+fetchClockData()
+
+setInterval(function () {
+    fetchClockData()
+},1000);
