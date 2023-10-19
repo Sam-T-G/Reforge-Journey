@@ -188,17 +188,9 @@ header p {
     margin-right: 12vw;
 }
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
 .apis {
     display: block;
     height: 800px;
-    margin-top: 10%;
     align-items: center;
     justify-content: center;
     background-color: var(--dark-blue);
@@ -207,17 +199,24 @@ header p {
 
 .apis h6 {
     display: flex;
+    padding-top: 10%;
     align-items: center;
     justify-content: center;
     width: 100vw;
     font-size: 3.5rem;
-
 }
 
 .apiContainers {
     display: flex;
     justify-content: space-between;
     padding: 10vw;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 /* future implementation of mobile media queries for page responsiveness */
