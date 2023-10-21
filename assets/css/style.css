@@ -213,6 +213,20 @@ header p {
     padding: 10vw;
 }
 
+.clockApi {
+    display:flex;
+    background-color: var(--black); 
+    color: var(--off-white); 
+    border-radius: 10px; 
+    padding: 20px; 
+    justify-content: center;
+    text-align: center; 
+    font-size: 36px; 
+    width: 200px; 
+    height: 7vh;
+    margin: 0 auto; 
+}
+
 .footer {
     padding: 30px;
     clear: both;

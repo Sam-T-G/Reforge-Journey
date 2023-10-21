@@ -107,8 +107,8 @@ function fetchClockData() {
             const minutes = date.getMinutes();
             const seconds = date.getSeconds();
 
-              // Determine if it's AM or PM
-              const amOrPm = hours >= 12 ? 'PM' : 'AM';
+            // Determine if it's AM or PM
+            const amOrPm = hours >= 12 ? 'PM' : 'AM';
 
             // String that displays desired time format
             const formattedTime = `${hours}:${minutes}:${seconds}${amOrPm}`;
