@@ -110,8 +110,11 @@ function fetchClockData() {
             // Determine if it's AM or PM
             const amOrPm = hours >= 12 ? 'PM' : 'AM';
 
+             // Convert to 12-hour format
+             const hours12 = hours % 12 || 12;
+
             // String that displays desired time format
-            const formattedTime = `${hours}:${minutes}:${seconds}${amOrPm}`;
+            const formattedTime = `${hours12}:${minutes}:${seconds}${amOrPm}`;
 
             // populate the correct div with appropriate information
             document.getElementById("clock-container").textContent = formattedTime;
