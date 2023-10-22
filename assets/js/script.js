@@ -97,15 +97,35 @@ function fetchClockData() {
     fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
-            // Extract the time from the API response
-            const currentTime = data.datetime;
+            // Fetch time from API response
+            const datetime = data.datetime;
 
-            // Display fetched information and displays time in clock-container div
-            document.getElementById("clock-container").textContent = currentTime;
+            const date = new Date(datetime);
+
+            // Fetch the desired time components
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+
+            // Determine if it's AM or PM
+            const amOrPm = hours >= 12 ? 'PM' : 'AM';
+
+             // Convert to 12-hour format
+             const hours12 = hours % 12 || 12;
+
+            // String that displays desired time format
+            const formattedTime = `${hours12}:${minutes}:${seconds}${amOrPm}`;
+
+            // populate the correct div with appropriate information
+            document.getElementById("clock-container").textContent = formattedTime;
         })
         .catch((error) => {
             console.error("Error fetching clock data: " + error);
         });
 }
 
-fetchClockData();
+fetchClockData()
+
+setInterval(function () {
+    fetchClockData()
+},1000);
