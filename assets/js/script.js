@@ -114,7 +114,7 @@ function fetchClockData() {
              const hours12 = hours % 12 || 12;
 
             // String that displays desired time format
-            const formattedTime = `${hours12}:${minutes}:${seconds}${amOrPm}`;
+            const formattedTime = `${hours12}:${minutes}:${seconds} ${amOrPm}`;
 
             // populate the correct div with appropriate information
             document.getElementById("clock-container").textContent = formattedTime;
