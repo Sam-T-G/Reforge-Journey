@@ -222,23 +222,27 @@ header p {
 }
 
 .clockApi {
-    display:flex;
+    display: flex;
+    flex-direction: column;
     background-color: var(--black); 
     color: var(--off-white); 
     border-radius: 10px; 
     padding: 20px; 
     justify-content: center;
+    align-items: center;
     text-align: center; 
     font-size: 36px; 
     width: 300px; 
-    height: 600px;
+    height: 300px;
     margin: 0 auto; 
 }
 
 .clockApi p {
     display: flex;
     justify-content: center;
-    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
 }
 
 .footer {
