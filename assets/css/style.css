@@ -243,6 +243,7 @@ header p {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    width: 200px;
     margin-top: 0;
     padding: 0;
 }
