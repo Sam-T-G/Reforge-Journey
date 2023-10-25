@@ -256,29 +256,44 @@ header p {
 }
 
 .weatherApi {
+    display: flex;
     background-color: var(--black);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
     margin: 50px auto;
     padding: 20px;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
     text-align: left;
     width: 300px;
+    height: 300px;
 }
   
 .weatherApi p {
-    font-size: 24px;
-    margin-bottom: 20px;
+    display: flex;
+    width: 290px;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    margin: 10px;
+    padding: 0;
 }
   
 #weather-data {
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 7px;
+    width: 300px;
 }
   
 #temperature, #humidity, #wind-speed {
     font-weight: bold;
+    justify-content: left;
+    align-items: left;
 }
 
 .footer {
