@@ -133,3 +133,38 @@ fetchClockData()
 setInterval(function () {
     fetchClockData()
 },1000);
+
+// Define your API key
+const apiKey = "9b35244b1b7b8578e6c231fd7654c186";
+
+// Function to get real-time weather in LA
+async function getCurrentWeather() {
+  const city = "Los Angeles";
+  const queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+
+  try {
+    const response = await fetch(queryURL);
+    const data = await response.json();
+
+    // Extract desired weather information
+    const temperature = data.main.temp;
+    const humidity = data.main.humidity;
+    const windSpeed = data.wind.speed;
+
+     // Update HTML elements with weather data
+     document.getElementById("temperature").textContent = temperature;
+     document.getElementById("humidity").textContent = humidity;
+     document.getElementById("wind-speed").textContent = windSpeed;
+  } catch (error) {
+    console.error("Error fetching weather data:", error);
+    return null;
+  }
+}
+
+getCurrentWeather().then((weatherData) => {
+  if (weatherData) {
+    console.log("Current Temperature:", weatherData.temperature, "°F");
+    console.log("Humidity:", weatherData.humidity, "%");
+    console.log("Wind Speed:", weatherData.windSpeed, "MPH");
+  }
+});
