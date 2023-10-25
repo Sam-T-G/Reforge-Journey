@@ -151,7 +151,10 @@ async function getCurrentWeather() {
     const humidity = data.main.humidity;
     const windSpeed = data.wind.speed;
 
-    return { temperature, humidity, windSpeed };
+     // Update HTML elements with weather data
+     document.getElementById("temperature").textContent = temperature;
+     document.getElementById("humidity").textContent = humidity;
+     document.getElementById("wind-speed").textContent = windSpeed;
   } catch (error) {
     console.error("Error fetching weather data:", error);
     return null;
