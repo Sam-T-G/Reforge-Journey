@@ -134,140 +134,34 @@ setInterval(function () {
     fetchClockData()
 },1000);
 
+// Define your API key
 const apiKey = "9b35244b1b7b8578e6c231fd7654c186";
-const searchHistoryList = [];
 
-// function for current condition
-async function currentWeather(city) {
-    const queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+// Function to get real-time weather in LA
+async function getCurrentWeather() {
+  const city = "Los Angeles";
+  const queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
-    try {
-        const response = await fetch(queryURL);
-        const cityWeatherValue = await response.json();
-        
-        console.log(cityWeatherValue);
+  try {
+    const response = await fetch(queryURL);
+    const data = await response.json();
 
-        document.getElementById("weatherContent").style.display = "block";
-        document.getElementById("cityDetail").innerHTML = '';
+    // Extract desired weather information
+    const temperature = data.main.temp;
+    const humidity = data.main.humidity;
+    const windSpeed = data.wind.speed;
 
-        const iconCode = cityWeatherValue.weather[0].icon;
-        const iconURL = `https://openweathermap.org/img/w/${iconCode}.png`;
-
-        // displays temp, humidity, and wind speed
-        const today = moment().format("L");
-        const currentCity = `
-        <h4 id="currentCity">
-            ${cityWeatherValue.name} ${today} <img src="${iconURL}" alt="${cityWeatherValue.weather[0].description}" />
-        </h4>
-        <p>Temperature: ${cityWeatherValue.main.temp} °F</p>
-        <p>Humidity: ${cityWeatherValue.main.humidity}%</p>
-        <p>Wind Speed: ${cityWeatherValue.wind.speed} MPH</p>
-        `;
-
-        document.getElementById("cityDetail").innerHTML = currentCity;
-
-        // UVI API
-        const lat = cityWeatherValue.coord.lat;
-        const lon = cityWeatherValue.coord.lon;
-        const uviURL = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-
-        const uviResponse = await (await fetch(uviURL)).json();
-        console.log(uviResponse);
-
-        const uvIndex = uviResponse.value;
-        const uvIndexColor = document.createElement("span");
-        uvIndexColor.id = "uvIndexColor";
-        uvIndexColor.className = "px-2 py-2 rounded";
-        uvIndexColor.textContent = uvIndex;
-        const uvIndexP = document.createElement("p");
-        uvIndexP.innerHTML = "UV Index: ";
-        uvIndexP.appendChild(uvIndexColor);
-
-        document.getElementById("cityDetail").appendChild(uvIndexP);
-
-        forecast(lat, lon, apiKey, cityWeatherValue.name);
-    } catch (error) {
-        console.error(error);
-    }
+    return { temperature, humidity, windSpeed };
+  } catch (error) {
+    console.error("Error fetching weather data:", error);
+    return null;
+  }
 }
 
-// Search button that retrieves search history and enters the city of choice
-document.getElementById("searchBtn").addEventListener("click", function (event) {
-    event.preventDefault();
-
-    const city = document.getElementById("enterCity").value.trim();
-    currentWeather(city);
-    if (!searchHistoryList.includes(city)) {
-        searchHistoryList.push(city);
-        const searchedCity = document.createElement("li");
-        searchedCity.className = "list-group-item";
-        searchedCity.textContent = city;
-        document.getElementById("searchHistory").appendChild(searchedCity);
-    }
-
-    localStorage.setItem("city", JSON.stringify(searchHistoryList));
-    console.log(searchHistoryList);
-});
-
-// function for 5-day forecast
-async function forecast(lat, lon, apiKey, cityName) {
-    const forecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=current,minutely,hourly,alerts&appid=${apiKey}`;
-
-    try {
-        const response = await fetch(forecastURL);
-        const forecastInfo = await response.json();
-        console.log(forecastInfo);
-        
-        const forecastElement = document.getElementById("forecast");
-        forecastElement.innerHTML = '';
-
-        for (let i = 1; i < 6; i++) {
-        const cityInfo = {
-            date: forecastInfo.daily[i].dt,
-            icon: forecastInfo.daily[i].weather[0].icon,
-            temp: forecastInfo.daily[i].temp.day,
-            humidity: forecastInfo.daily[i].humidity,
-        };
-
-        const currDate = moment.unix(cityInfo.date).format("MM/DD/YYYY");
-        const iconURL = `<img src="https://openweathermap.org/img/w/${cityInfo.icon}.png" alt="${forecastInfo.daily[i].weather[0].main}" />`;
-
-        // shows current date, icon, temperature, and humidity
-        const forecastDisplay = `
-            <div class="pl-3">
-            <div class="card pl-3 pt-3 mb-3 bg-primary text-light" style="width: 12rem;">
-                <div class="card-body">
-                <h5>${currDate}</h5>
-                <p>${iconURL}</p>
-                <p>Temp: ${cityInfo.temp} °F</p>
-                <p>Humidity: ${cityInfo.humidity}%</p>
-                </div>
-            </div>
-            </div>
-        `;
-
-        forecastElement.insertAdjacentHTML("beforeend", forecastDisplay);
-        }
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-// Click function to display the current and future weather in the selected city
-document.getElementById("searchHistory").addEventListener("click", function (event) {
-    if (event.target && event.target.matches("li.list-group-item")) {
-        const displayCity = event.target.textContent;
-        currentWeather(displayCity);
-    }
-});
-
-// Grabs the previously searched city from local storage on page load
-document.addEventListener("DOMContentLoaded", function () {
-    const searchHistoryArr = JSON.parse(localStorage.getItem("city"));
-
-    if (searchHistoryArr !== null && searchHistoryArr.length > 0) {
-        const lastSearchedCity = searchHistoryArr[searchHistoryArr.length - 1];
-        currentWeather(lastSearchedCity);
-        console.log(`Last searched city: ${lastSearchedCity}`);
-    }
+getCurrentWeather().then((weatherData) => {
+  if (weatherData) {
+    console.log("Current Temperature:", weatherData.temperature, "°F");
+    console.log("Humidity:", weatherData.humidity, "%");
+    console.log("Wind Speed:", weatherData.windSpeed, "MPH");
+  }
 });
