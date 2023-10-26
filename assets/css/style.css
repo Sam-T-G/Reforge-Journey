@@ -137,11 +137,11 @@ header p {
     justify-content: center;
     align-items: center;
     background-color: var(--light-gray);
-    height: 100vh;
-    background-image: url('../images/Borobudur\ Rice\ Fields-.jpg');
+    height: 1080px;
+    background-image: url('../images/Dreamy-Bali-Waterfall.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.85; /* Lowered opacity value */
+    /* opacity: 0.85;  */
     background-attachment: fixed; /* Create the parallax effect */  
 }
 
