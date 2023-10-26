@@ -131,7 +131,7 @@ function fetchClockData() {
 fetchClockData()
 
 setInterval(function () {
-    fetchClockData()
+  fetchClockData()
 },1000);
 
 // Define your API key
@@ -162,3 +162,7 @@ async function getCurrentWeather() {
 }
 
 getCurrentWeather()
+
+setInterval(function () {
+  getCurrentWeather()
+},60000);
