@@ -89,6 +89,7 @@ header p {
     /* makes nav bar persistent on top of the page regardless of scrolling down throughout the page */
     display: flex;
     position: fixed; 
+    z-index: 999;
     margin: 0;
     padding: 0;
     top: 0;
@@ -136,12 +137,11 @@ header p {
     justify-content: center;
     align-items: center;
     background-color: var(--light-gray);
-     /* Set the section height and add a background image */
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh;
     background-image: url('../images/Borobudur\ Rice\ Fields-.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.7; /* Lowered opacity value (adjust as needed) */
+    opacity: 0.85; /* Lowered opacity value */
     background-attachment: fixed; /* Create the parallax effect */  
 }
 
