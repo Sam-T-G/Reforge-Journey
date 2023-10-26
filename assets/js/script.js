@@ -90,7 +90,7 @@ typeTextEffect();
 
 
 // API url with call to fetch time based off of user IP location
-const apiUrl = "http://worldtimeapi.org/api/ip";
+const apiUrl = "http://worldtimeapi.org/api/timezone/America/Los_Angeles";
 
 // fetch and display clock data from API
 function fetchClockData() {
