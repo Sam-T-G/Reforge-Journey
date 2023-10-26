@@ -161,10 +161,4 @@ async function getCurrentWeather() {
   }
 }
 
-getCurrentWeather().then((weatherData) => {
-  if (weatherData) {
-    console.log("Current Temperature:", weatherData.temperature, "°F");
-    console.log("Humidity:", weatherData.humidity, "%");
-    console.log("Wind Speed:", weatherData.windSpeed, "MPH");
-  }
-});
+getCurrentWeather()
