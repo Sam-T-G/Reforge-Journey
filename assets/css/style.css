@@ -232,9 +232,8 @@ header p {
 .clockApi {
     display: flex;
     flex-direction: column;
-    background-color: var(--black); 
+    background-color: var(--blue); 
     color: var(--off-white);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px; 
     padding: 20px; 
     justify-content: center;
@@ -244,6 +243,7 @@ header p {
     width: 300px; 
     height: 200px;
     margin: 0 auto; 
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.5);
 }
 
 .clockApi p {
@@ -257,9 +257,8 @@ header p {
 
 .weatherApi {
     display: flex;
-    background-color: var(--black);
+    background-color: var(--blue);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     margin: 50px auto;
     padding: 20px;
@@ -268,6 +267,7 @@ header p {
     text-align: left;
     width: 300px;
     height: 300px;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.5);
 }
   
 .weatherApi p {
