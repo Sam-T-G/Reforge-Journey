@@ -88,6 +88,11 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(header);
 typeTextEffect();
 
+window.addEventListener('scroll', function () {
+  let offset = window.pageYOffset;
+  document.querySelector('.css').style.backgroundPositionY = -offset * 0.3 + 'px';
+});
+
 
 // API url with call to fetch time based off of user IP location
 const apiUrl = "http://worldtimeapi.org/api/timezone/America/Los_Angeles";
