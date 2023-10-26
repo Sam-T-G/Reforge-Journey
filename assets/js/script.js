@@ -129,7 +129,7 @@ function fetchClockData() {
 }
 
 fetchClockData()
-
+//Set interval to refresh clock API once every second
 setInterval(function () {
   fetchClockData()
 },1000);
@@ -162,7 +162,7 @@ async function getCurrentWeather() {
 }
 
 getCurrentWeather()
-
+//Set interval to refresh weather API once every minute
 setInterval(function () {
   getCurrentWeather()
 },60000);
