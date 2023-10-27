@@ -89,8 +89,9 @@ observer.observe(header);
 typeTextEffect();
 
 window.addEventListener('scroll', function () {
+  const container = document.querySelector('.parallax-container');
   let offset = window.pageYOffset;
-  document.querySelector('.css').style.backgroundPositionY = -offset * 0.3 + 'px';
+  container.style.backgroundPositionY = -offset * 0.3 + 'px';
 });
 
 

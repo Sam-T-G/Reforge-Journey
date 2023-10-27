@@ -132,18 +132,23 @@ header p {
     margin-right: 12vw;
 }
 
-.css {
+.parallax-container {
+    background-image: url('../images/Dreamy-Bali-Waterfall\ resized.jpg');
+    background-position: center; 
+    background-size: auto;
+    background-attachment: fixed;
+    height: 1080px;
+    display: flex;
+  }
+  
+  .css {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-gray);
-    height: 1080px;
-    background-image: url('../images/Dreamy-Bali-Waterfall.jpg');
-    background-size: cover;
-    background-position: center;
-    /* opacity: 0.85;  */
-    background-attachment: fixed; /* Create the parallax effect */  
-}
+    height: 100%;
+  }
+  
+
 
 .css p {
     display: flex;
