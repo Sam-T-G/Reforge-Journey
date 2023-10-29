@@ -320,6 +320,14 @@ header p {
     margin: 10px;
     padding: 0;
 }
+
+#weatherText {
+    display: flex;
+    color: var(--dark-blue);
+    width: 400px;
+    height: 250px;
+    letter-spacing: 0.5px;
+}
   
 #weather-data {
     display: flex;
