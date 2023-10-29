@@ -288,6 +288,12 @@ header p {
     padding: 0;
 }
 
+#weatherLine {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .weatherApi {
     display: flex;
     background-color: var(--blue);
@@ -345,19 +351,19 @@ header p {
     display: flex;
     align-items: center;
     margin-right: 20px;
-  }
+}
   
-  #weather-data p strong {
+#weather-data p strong {
     text-align: left;
     flex: 1;
     margin-left: 20px;
-  }
+}
   
-  #weather-data p span {
+#weather-data p span {
     text-align: right;
     flex: 1; 
     margin-right: 4px;
-  }
+}
   
 #humidity, #wind-speed {
     font-weight: bold;
