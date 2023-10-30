@@ -292,6 +292,7 @@ header p {
     display:flex;
     align-items: center;
     justify-content: center;
+    margin-right: 70px;
 }
 
 .weatherApi {
@@ -328,6 +329,8 @@ header p {
 }
 
 #weatherText {
+    justify-content: center;
+    align-items: center;
     display: flex;
     color: var(--dark-blue);
     width: 400px;
