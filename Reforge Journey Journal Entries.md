@@ -111,3 +111,7 @@ Today's struggle: I just spent about two hours of my time reading into the paral
 -11:40 PM 
 
 Honestly at this point, my reforging page isn't perfect, but I've come to realize that Im a detail-oriented personality, especially when it comes to visual design. I think I'm ready to move forward with other projects I'm excited to take on, and work towards more real-world applications that I can fine tune for my portfolio.
+
+-11:33 PM
+
+Throughout the day, I've been reading up on different system's in the current market and some design/application trends to try and extract some inspiration on what my next project(s) will be. As per my logical/efficient nature usually operates, I've decided I should probably create some sort of task/goal organizing application and also a general template of my future actual portfolio. The idea behind these two are pretty straightforward with the practical use of a task manager and future resume, but I can now take my time to create these two instead of having been assigned an assignment with an allotted timeframe to turn it in. Now I can take the time to perfect something that I will be proud of and confident in so much so that it'll also help guide my journey moving forward.
