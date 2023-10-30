@@ -329,6 +329,8 @@ header p {
 }
 
 #weatherText {
+    justify-content: center;
+    align-items: center;
     display: flex;
     color: var(--dark-blue);
     width: 400px;
