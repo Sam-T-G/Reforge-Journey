@@ -96,7 +96,7 @@ window.addEventListener('scroll', function () {
 
 
 // API url with call to fetch time based off of user IP location
-const apiUrl = "http://worldtimeapi.org/api/timezone/America/Los_Angeles";
+const apiUrl = "https://worldtimeapi.org/api/timezone/America/Los_Angeles";
 
 // fetch and display clock data from API
 function fetchClockData() {
